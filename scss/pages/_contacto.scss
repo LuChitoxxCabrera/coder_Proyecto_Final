@@ -1,0 +1,41 @@
+/* Contacto */
+
+.contacto {
+    @include flex-box ();
+    flex-direction: column;
+    margin: 30px auto;
+    width: 80%;
+    padding: 30px;
+    color: $color_primario;
+    max-width: auto;
+    gap: 1rem;
+    border: 2px solid $color_primario;
+    text-align: center;
+}
+ 
+.info_ {
+    div {
+        padding: 10px;
+    }
+}
+
+.maps {
+    padding: 25px;
+}
+
+.mail {
+    text-decoration: none;
+    color: $color_primario;
+}
+
+@include mq-desktop {
+    .contacto {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .maps {
+        max-width: 500px;
+    }
+}
+  

@@ -1,0 +1,51 @@
+$color_primario: #164e63;
+$color_secundario: #ffffff;
+$color_multi: #000000;
+$color_rgba: rgba(0, 0, 0, 0.2);
+
+@mixin flex-box ($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin mq-tablet {
+    @media only screen and (min-width: 585px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media only screen and (min-width: 970px) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Gabarito", sans-serif;
+}
+
+header {
+	height: 110px;
+}
+
+.barra {
+    width: 100%;
+    padding: 10px ;
+    background: #164e63;
+}
+
+form {
+    max-width:520px;
+    margin:50px auto;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}

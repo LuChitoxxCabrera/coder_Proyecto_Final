@@ -1,0 +1,50 @@
+/* Boton Principal*/
+
+button {
+    color: $color_primario;
+    text-decoration: none;
+    font-size: 25px;
+    border: none;
+    background: none;
+    font-weight: 900;
+    cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: $color_primario;
+        }     
+}
+
+button::before {
+    margin-left: auto;
+}
+
+button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: $color_multi;
+    display: block;
+    transition: 0.5s;
+}
+
+button:hover::after, button:hover::before {
+    width: 100%;
+}
+
+/*Boton Formulario*/
+
+[type="submit"] {
+    width: 100%;
+    background:$color_primario;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:$color_secundario;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:500;
+}
