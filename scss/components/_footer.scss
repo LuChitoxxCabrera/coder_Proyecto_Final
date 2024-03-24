@@ -83,8 +83,8 @@
     }
 }
 
-@include mq-tablet {
-    main-footer {
+@include mq-footer-tablet {
+    .main-footer {
         padding: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -95,7 +95,7 @@
      } 
 }
 
-@media (max-width: 480px) {
+@include mq-footer-movil {
     .main-footer {
         grid-template-columns: 1fr;
     }
@@ -106,5 +106,5 @@
 
     .com {
         padding: 20px 0;
-    }  
-  }
+    }
+}

@@ -21,6 +21,18 @@ $color_rgba: rgba(0, 0, 0, 0.2);
     }
 }
 
+@mixin mq-footer-tablet {
+    @media only screen and (max-width: 585px) {
+        @content;
+    }
+}
+
+@mixin mq-footer-movil {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;

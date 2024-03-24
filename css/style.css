@@ -283,7 +283,7 @@ button:hover::after, button:hover::before {
   width: 100%;
   padding: 40px 20%;
   background: #164e63;
-  text-align: justify;
+  text-align: center;
   color: #ffffff;
 }
 .texto_parrafo h2 {
@@ -340,6 +340,7 @@ button:hover::after, button:hover::before {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  text-align: center;
   padding: 30px;
   gap: 1rem;
 }
@@ -418,7 +419,7 @@ button:hover::after, button:hover::before {
 }
 
 .clientes_logo img {
-  max-width: 300px;
+  max-width: 270px;
   padding: 5px;
 }
 
@@ -440,10 +441,6 @@ button:hover::after, button:hover::before {
 
 .info_ div {
   padding: 10px;
-}
-
-.maps {
-  padding: 25px;
 }
 
 .mail {
@@ -574,8 +571,8 @@ button:hover::after, button:hover::before {
   padding: 5px 0;
 }
 
-@media only screen and (min-width: 585px) {
-  main-footer {
+@media only screen and (max-width: 585px) {
+  .main-footer {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;

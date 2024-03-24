@@ -33,6 +33,7 @@
 .card-body {
     @include flex-box(center, flex-start);
     flex-direction: column;
+    text-align: center;
     padding: 30px;
     gap: 1rem;
 
