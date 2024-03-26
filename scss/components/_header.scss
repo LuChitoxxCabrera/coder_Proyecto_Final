@@ -17,11 +17,11 @@ header {
     .menu_hamburguesa {
         display: none;
 
-        &:checked + .ul_links {
+        &:checked+.ul_links {
             height: calc(100vh - 150px);
         }
     }
-    
+
     .list_icon {
         color: $color_multi;
         cursor: pointer;
@@ -40,7 +40,7 @@ header {
         transition: all .4s;
         background-image: url(../img/fondo_links.jpg);
     }
-    
+
     .link {
         font-size: 3rem;
         color: $color_secundario;
@@ -53,7 +53,7 @@ header {
     }
 
     @include mq-tablet {
-        .menu_hamburguesa:checked + .ul_links {
+        .menu_hamburguesa:checked+.ul_links {
             display: none;
         }
 
@@ -75,7 +75,7 @@ header {
             color: $color_primario;
             font-weight: bold;
         }
-      
+
         .list_icon {
             display: none;
         }
@@ -84,6 +84,7 @@ header {
     @include mq-desktop {
         .navbar {
             flex-direction: row;
+
             .div {
                 /* width: 40%; */
                 @include flex-box ();
