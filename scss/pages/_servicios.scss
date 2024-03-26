@@ -31,11 +31,12 @@
 }
   
 .card-body {
-    @include flex-box(center, flex-start);
+    @include flex-box();
     flex-direction: column;
     text-align: center;
     padding: 30px;
     gap: 1rem;
+
 
     p {
         font-size: 13px;
